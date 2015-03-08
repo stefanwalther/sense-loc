@@ -1,7 +1,7 @@
 {
   "name": "extloc",
   "description": "Get the location where Qlik Sense Desktop loads extensions from.",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "homepage": "https://github.com/stefanwalther/extloc",
   "author": {
     "name": "Stefan Walther",
@@ -28,7 +28,8 @@
   "dependencies": {
     "path-extra": "^1.0.2",
     "q": "^1.2.0",
-    "winreg": "0.0.12"
+    "winreg": "0.0.12",
+    "winston": "^0.9.0"
   },
   "devDependencies": {
     "chai": "^2.1.1",
