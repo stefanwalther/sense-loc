@@ -1,25 +1,14 @@
-/*!
- * extloc <https://github.com/stefanwalther/extloc>
- *
- * Copyright (c) 2015 Stefan Walther.
- * Licensed under the MIT license.
- */
-
 'use strict';
+var chai = require( 'chai' );
+var should = chai.should();
+var extloc = require( './../lib/extloc' );
 
-var assert = require('assert');
-var should = require('should');
-var extloc = require('./');
-
-describe('extloc', function () {
-  it('should:', function () {
-    extloc('a').should.equal({a: 'b'});
-    extloc('a').should.eql('a');
-  });
-
-  it('should throw an error:', function () {
-    (function () {
-      extloc();
-    }).should.throw('extloc expects valid arguments');
-  });
-});
+describe( 'extloc', function () {
+	it( 'should return a valid path', function ( done ) {
+		extloc.getPath().then( function ( data ) {
+			console.log('data', data);
+			data.should.not.be.empty;
+			done();
+		})
+	} );
+} );
