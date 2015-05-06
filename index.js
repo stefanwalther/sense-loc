@@ -1,3 +1,3 @@
 'use strict';
 
-module.exports = require( './lib/extloc' );
+module.exports = require( './lib/qlikloc' );
