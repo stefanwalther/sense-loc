@@ -1,4 +1,4 @@
-# qlikloc
+# sense-loc
 
 > Get Qlik Sense related folder locations.
 
