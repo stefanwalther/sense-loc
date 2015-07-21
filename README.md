@@ -2,7 +2,7 @@
 
 > Get Qlik Sense related folder locations.
 
-### [.getExtensionPath](lib%5Cindex.js#L27)
+### [.getLocalExtensionPath](lib%5Cindex.js#L27)
 
 Return the local extension path.
 
@@ -14,7 +14,7 @@ Return the local extension path.
 
 ```js
 var senseLoc = require( 'sense-loc' );
-senseLoc.getExtensionPath( function( err, data ) {
+senseLoc.getLocalExtensionPath( function( err, data ) {
     console.log('Local directory for extensions: ', data);
 });
 ```
