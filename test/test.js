@@ -4,7 +4,7 @@ var expect = chai.expect;
 var senseLoc = require( './../lib/index.js' );
 var fs = require( 'fs' );
 
-describe( 'extloc', function () {
+describe( 'sense-loc', function () {
 
 	it( 'contains valid methods', function ( done ) {
 		expect( senseLoc ).be.ok;
@@ -14,6 +14,8 @@ describe( 'extloc', function () {
 
 	it( 'should return a valid path (using a promise)', function ( done ) {
 		senseLoc.getLocalExtensionPath( function ( err, data ) {
+			//console.log('Local Extension Directory: ', data);
+			expect( err ).to.be.null;
 			expect( data ).not.to.be.empty;
 			expect( fs.existsSync( data ) ).to.be.true;
 			done();
