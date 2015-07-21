@@ -1,7 +1,7 @@
 {
   "name": "sense-loc",
   "description": "Get Qlik Sense related folder locations.",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "homepage": "https://github.com/stefanwalther/sense-loc",
   "author": {
     "name": "Stefan Walther",
@@ -27,8 +27,7 @@
   },
   "dependencies": {
     "path-extra": "^1.0.2",
-    "winreg": "0.0.12",
-    "winston": "^0.9.0"
+    "winreg": "0.0.12"
   },
   "devDependencies": {
     "chai": "^2.3.0",

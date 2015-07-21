@@ -2,7 +2,6 @@
 var chai = require( 'chai' );
 var expect = chai.expect;
 var senseLoc = require( './../lib/index.js' );
-var logger = require( './../lib/logger.js' );
 var fs = require( 'fs' );
 
 describe( 'extloc', function () {
@@ -15,7 +14,6 @@ describe( 'extloc', function () {
 
 	it( 'should return a valid path (using a promise)', function ( done ) {
 		senseLoc.getLocalExtensionPath( function ( err, data ) {
-			logger.silly( 'data', data );
 			expect( data ).not.to.be.empty;
 			expect( fs.existsSync( data ) ).to.be.true;
 			done();
