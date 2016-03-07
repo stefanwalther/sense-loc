@@ -10,7 +10,7 @@ Right now, this is a tiny library, just to get the local extension folder path, 
 
 ### [.getLocalExtensionPath](lib/index.js#L27)
 
-Return the local extension path.
+Return the local extension path (when working with Qlik Sense Desktop).
 
 **Params**
 
