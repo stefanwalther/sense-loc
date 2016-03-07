@@ -2,7 +2,7 @@
 
 > Get Qlik Sense related folder locations.
 
-## Why
+## About
 
 Right now, this is a tiny library, just to get the local extension folder path, but additions might be added in the future.
 
