@@ -8,7 +8,7 @@ Return the local extension path.
 
 **Params**
 
-* **{}**: callback
+* **{callback}**: cb - Callback that handles the request.
 
 **Example**
 
