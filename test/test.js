@@ -16,9 +16,11 @@ describe( 'sense-loc', function () {
 		senseLoc.getLocalExtensionPath( function ( err, data ) {
 			console.log( 'Local Extension Directory: ', data );
 			expect( err ).to.be.null;
-			expect( data ).not.to.be.empty;
 			if ( process.platform === 'win32' ) {
+				expect( data ).not.to.be.empty;
 				expect( fs.existsSync( data ) ).to.be.true;
+			} else {
+				expect( data ).to.be.undefined;
 			}
 			done();
 		} );
