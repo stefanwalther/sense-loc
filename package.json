@@ -35,7 +35,10 @@
     "should": "*",
     "verb": "git://github.com/verbose/verb"
   },
-  "keywords": [],
+  "keywords": [
+    "Qlik Sense",
+    "Qlik"
+  ],
   "verb": {
     "options": {
       "noreflinks": true
