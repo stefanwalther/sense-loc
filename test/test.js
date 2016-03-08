@@ -1,3 +1,4 @@
+/*global describe, it*/
 'use strict';
 var chai = require( 'chai' );
 var expect = chai.expect;
@@ -14,7 +15,6 @@ describe( 'sense-loc', function () {
 
 	it( 'should return a valid path (using a promise)', function ( done ) {
 		senseLoc.getLocalExtensionPath( function ( err, data ) {
-			console.log( 'Local Extension Directory: ', data );
 			expect( err ).to.be.null;
 			if ( process.platform === 'win32' ) {
 				expect( data ).not.to.be.empty;

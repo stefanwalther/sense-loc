@@ -25,6 +25,14 @@ senseLoc.getLocalExtensionPath( function( err, data ) {
 });
 ```
 
+## Test
+
+Install dev dependencies:
+
+```sh
+$ npm i -d && npm test
+```
+
 ## Author
 
 * [qliksite.io](http://qliksite.io)
