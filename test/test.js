@@ -14,10 +14,12 @@ describe( 'sense-loc', function () {
 
 	it( 'should return a valid path (using a promise)', function ( done ) {
 		senseLoc.getLocalExtensionPath( function ( err, data ) {
-			//console.log('Local Extension Directory: ', data);
+			console.log( 'Local Extension Directory: ', data );
 			expect( err ).to.be.null;
 			expect( data ).not.to.be.empty;
-			expect( fs.existsSync( data ) ).to.be.true;
+			if ( process.platform === 'win32' ) {
+				expect( fs.existsSync( data ) ).to.be.true;
+			}
 			done();
 		} );
 	} );
