@@ -18,7 +18,7 @@ describe( 'sense-loc', function () {
 			if ( process.platform === 'win32' ) {
 				expect( err ).to.be.null;
 				expect( data ).not.to.be.empty;
-				expect( fs.existsSync( data ) ).to.be.true;
+				expect( data ).to.have.string('Qlik/Sense/Extensions')
 			} else {
 				expect( err ).to.be.null;
 				expect( data ).to.be.null;
