@@ -8,8 +8,8 @@ var fs = require( 'fs' );
 describe( 'sense-loc', function () {
 
 	it( 'contains valid methods', function ( done ) {
-		expect( senseLoc ).be.ok;
-		expect( senseLoc.getLocalExtensionPath ).to.be.function;
+		expect( senseLoc ).to.be.ok;
+		expect( senseLoc.getLocalExtensionPath ).to.be.a.function;
 		done();
 	} );
 
