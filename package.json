@@ -1,44 +1,43 @@
 {
   "name": "sense-loc",
+  "version": "0.3.4",
   "description": "Get Qlik Sense related folder locations.",
-  "version": "0.3.3",
+  "keywords": [
+    "extensions",
+    "qlik",
+    "qlik-sense",
+    "visualization-extensions"
+  ],
   "homepage": "https://github.com/stefanwalther/sense-loc",
+  "bugs": {
+    "url": "https://github.com/stefanwalther/sense-loc/issues"
+  },
+  "license": "MIT",
   "author": {
     "name": "Stefan Walther",
     "url": "http://qliksite.io"
   },
+  "main": "index.js",
   "repository": {
     "type": "git",
     "url": "git://github.com/stefanwalther/sense-loc.git"
-  },
-  "bugs": {
-    "url": "https://github.com/stefanwalther/sense-loc/issues"
-  },
-  "license": {
-    "type": "MIT",
-    "url": "https://github.com/stefanwalther/sense-loc/blob/master/LICENSE.md"
-  },
-  "main": "index.js",
-  "engines": {
-    "node": ">=0.10.0"
   },
   "scripts": {
     "test": "mocha"
   },
   "dependencies": {
-    "path-extra": "^1.0.2",
-    "winreg": "0.0.12"
+    "path-extra": "^3.0.0",
+    "winreg": "1.2.1"
   },
   "devDependencies": {
-    "chai": "^2.3.0",
+    "chai": "^3.5.0",
     "mocha": "*",
     "should": "*",
     "verb": "git://github.com/verbose/verb"
   },
-  "keywords": [
-    "Qlik Sense",
-    "Qlik"
-  ],
+  "engines": {
+    "node": ">=0.10.0"
+  },
   "verb": {
     "options": {
       "noreflinks": true
