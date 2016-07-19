@@ -13,13 +13,14 @@ describe( 'sense-loc', function () {
 		done();
 	} );
 
-	it( 'should return a valid path (using a promise)', function ( done ) {
+	it( 'should return a valid path', function ( done ) {
 		senseLoc.getLocalExtensionPath( function ( err, data ) {
-			expect( err ).to.be.null;
 			if ( process.platform === 'win32' ) {
+				expect( err ).to.be.undefined;
 				expect( data ).not.to.be.empty;
 				expect( fs.existsSync( data ) ).to.be.true;
 			} else {
+				expect( err ).to.be.null;
 				expect( data ).to.be.undefined;
 			}
 			done();
