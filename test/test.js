@@ -21,7 +21,7 @@ describe( 'sense-loc', function () {
 				expect( fs.existsSync( data ) ).to.be.true;
 			} else {
 				expect( err ).to.be.null;
-				expect( data ).to.be.undefined;
+				expect( data ).to.be.null;
 			}
 			done();
 		} );
