@@ -1,5 +1,6 @@
+[![NPM version](https://img.shields.io/npm/v/sense-loc.svg?style=flat)](https://www.npmjs.com/package/sense-loc)
 [![Build status](https://ci.appveyor.com/api/projects/status/t2ol7g1g8c82ekkn/branch/master?svg=true)](https://ci.appveyor.com/project/stefanwalther/sense-loc/branch/master)
-[![Build Status](https://img.shields.io/travis/Stefan%20Walther/sense-loc.svg?style=flat)](https://travis-ci.org/Stefan%20Walther/sense-loc)
+[![Build Status](https://img.shields.io/travis/stefanwalther/sense-loc.svg?style=flat)](https://travis-ci.org/stefanwalther/sense-loc)
 
 # sense-loc
 
@@ -42,7 +43,7 @@ $ npm install -d && npm test
 
 ## License
 
-Copyright © 2016, [Stefan Walther](http://qliksite.io).
+Copyright © 2016, [Stefan Walther](https://github.com/stefanwalther).
 Released under the MIT license.
 
 ***

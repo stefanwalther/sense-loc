@@ -15,7 +15,7 @@
   "license": "MIT",
   "author": {
     "name": "Stefan Walther",
-    "url": "http://qliksite.io"
+    "url": "https://github.com/stefanwalther"
   },
   "main": "index.js",
   "repository": {
@@ -43,6 +43,10 @@
     "layout": "empty",
     "tasks": [
       "readme"
-    ]
+    ],
+    "data": {
+      "twitter": "waltherstefan",
+      "travis_url": "stefanwaltehr"
+    }
   }
 }
