@@ -16,7 +16,7 @@ describe( 'sense-loc', function () {
 	it( 'should return a valid path', function ( done ) {
 		senseLoc.getLocalExtensionPath( function ( err, data ) {
 			if ( process.platform === 'win32' ) {
-				expect( err ).to.be.undefined;
+				expect( err ).to.be.null;
 				expect( data ).not.to.be.empty;
 				expect( fs.existsSync( data ) ).to.be.true;
 			} else {
