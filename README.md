@@ -4,6 +4,8 @@
 
 # sense-loc
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/stefanwalther/sense-loc.svg)](https://greenkeeper.io/)
+
 > Get Qlik Sense related folder locations.
 
 ## About
