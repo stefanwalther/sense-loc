@@ -27,7 +27,7 @@
   },
   "dependencies": {
     "path-extra": "^4.1.0",
-    "winreg": "1.2.3"
+    "winreg": "1.2.4"
   },
   "devDependencies": {
     "chai": "^3.5.0",
